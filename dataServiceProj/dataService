@@ -1,0 +1,54 @@
+dataService
+	objetivo
+		PPAL proveer un sistema de busqueda y despliegue de informacion
+		2dario CrearUpdateDelete info
+		R-in buscar info
+			command line like
+				fuzzy file finder (fzf)
+				fuzzy -inside the files- text finder (ripgrep)
+			GIS map interaction (QGIS)
+			chat"gpt" natural query to database
+				Question Answering https://github.com/postgresml/postgresml#question-answering
+				https://github.com/cloudquery/pg_gpt
+				https://www.ai2sql.io/
+			media metadata (exiftool)
+			office documents metadata
+				https://support.microsoft.com/en-us/topic/how-to-extract-information-from-office-files-by-using-office-file-formats-and-schemas-5f5fafdd-2f22-8b71-4348-57484b5a9fc5
+		Insights
+			https://github.com/postgresml/postgresml
+			NPL (NaturalLanguageProc)
+				PostgresML integrates hugs Hugging Face Transformers to bring state-of-the-art NLP
+				Text Classification     Zero-Shot Classification     Token Classification     Translation     Summarization     Question Answering     Text Generation     Text-to-Text Generation     Fill-Mask
+				search digits in images
+		R-out desplegar info
+			GIS map interaction (QGIS)
+			listas buscador/filtrables
+			file explorer
+			"chat-gpt" to database (postgresML)
+			link/download then launch local default programs
+		reli- account- manage- ABLE
+			data replication archiving
+			user permissions roles
+			system snapshots
+			system duplicates-versioning management
+	arquitectura componentes
+		hardware
+			servidor on-premise de acceso local
+			replicado en la nube
+				condiciones por.ej. archivos muy pesados no
+				administracion de hot/cold storage para archivos de uso frecuente vs archiving
+		software
+			Microsoft
+				cloud azure
+				auth AzureDirectory
+				NoSQL Cosmos-db storage
+				dashboards PowerBi
+			PostGres
+				SQL DB
+				ML
+			QGIS
+				map interactions via plugin
+			+ libertad de lanzar links segun software local del usuario
+	proceso es ciclo
+		https://www.esri.com/about/newsroom/insider/building-a-gis-implementation-strategy-and-best-practices/
+		Requirements -> Design -> Development -> Delivery
